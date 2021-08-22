@@ -1,0 +1,27 @@
+.burger-btn {
+  display: none;
+}
+
+.logo {
+  width: 80px;
+  margin: 80px 140px;
+}
+
+@media screen and (max-width: 600px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ea9085;
+    font-size: 30px;
+    margin: 40px;
+  }
+  .burger-btn {
+    display: block;
+    z-index: 1;
+  }
+  .logo {
+    width: 60px;
+    margin: 0px;
+  }
+}
