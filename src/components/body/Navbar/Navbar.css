@@ -1,0 +1,29 @@
+.nav-container {
+  color: #512b58;
+  font-size: 30px;
+}
+
+li {
+  list-style: none;
+  margin: 20px auto;
+}
+li:hover {
+  cursor: pointer;
+  translate: 5px;
+  transition: all 0.2s;
+}
+
+a {
+  text-decoration: none;
+  color: #512b58;
+}
+
+a:hover {
+  color: #ea9085;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-container {
+    display: none;
+  }
+}

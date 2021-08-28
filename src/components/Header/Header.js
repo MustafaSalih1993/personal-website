@@ -1,11 +1,16 @@
 import logo from "./logo.svg";
-import "./Logo.css";
+import "./Header.css";
 import { FaBars } from "react-icons/fa";
 import { GrClose } from "react-icons/gr";
-function Logo(props) {
+import { Link } from "react-router-dom";
+
+function Header(props) {
   return (
     <div className="header-container">
-      <img className="logo" src={logo} alt="logo" />
+      <Link to="/">
+        <img className="logo" src={logo} alt="logo" />
+      </Link>
+
       <div
         onClick={() => props.setMobileNav(!props.mobileNav)}
         className="burger-btn"
@@ -16,4 +21,4 @@ function Logo(props) {
   );
 }
 
-export default Logo;
+export default Header;

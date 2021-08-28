@@ -1,0 +1,31 @@
+.button-container {
+  width: 200px;
+  height: 50px;
+  background-color: #512b58;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.button-title {
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-title:hover {
+  color: #ea9085;
+}
+
+@media screen and (max-width: 600px) {
+  .button-container {
+    height: 38px;
+  }
+
+  .button-title {
+    font-size: 18px;
+  }
+}

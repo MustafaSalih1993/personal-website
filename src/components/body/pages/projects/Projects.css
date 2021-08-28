@@ -1,0 +1,42 @@
+.projects-container {
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 48px;
+  color: #ea9085;
+  margin-bottom: 100px;
+}
+.cards-end {
+  text-align: center;
+  margin: 100px auto;
+}
+
+.cards-end-title {
+  color: #ffa372;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+.cards-end-text {
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.cards-end-link {
+  color: #ea9085;
+}
+
+@media screen and (max-width: 600px) {
+  .projects-title {
+    font-size: 38px;
+    margin-bottom: 80px;
+  }
+
+  .cards-end-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .cards-end-text {
+    font-size: 18px;
+  }
+}
