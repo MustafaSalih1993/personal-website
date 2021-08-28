@@ -5,25 +5,6 @@
   margin: auto 140px;
 }
 
-.mobile-nav {
-  display: none;
-}
-.nav-container {
-  color: #512b58;
-  font-size: 30px;
-}
-
-li {
-  list-style: none;
-  margin: 20px auto;
-}
-li:hover {
-  cursor: pointer;
-  color: #ea9085;
-  translate: 5px;
-  transition: all 0.2s;
-}
-
 .text-container {
   display: flex;
   flex-direction: column;
@@ -43,25 +24,6 @@ li:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .nav-container {
-    display: none;
-  }
-  .mobile-nav {
-    position: absolute;
-    display: flex;
-    background-color: #ea9085;
-    width: 100%;
-    height: 60vh;
-    top: 0;
-    align-items: center;
-    justify-content: center;
-  }
-  .mobile-nav-links {
-    display: flex;
-    flex-direction: column;
-    color: #512b58;
-    font-size: 22px;
-  }
   .main-container {
     margin: 100px 50px;
     justify-content: center;

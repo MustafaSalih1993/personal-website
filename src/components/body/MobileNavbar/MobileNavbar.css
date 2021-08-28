@@ -1,0 +1,22 @@
+.mobile-nav {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-nav {
+    position: absolute;
+    display: flex;
+    background-color: #ea9085;
+    width: 100%;
+    height: 60vh;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    color: #512b58;
+    font-size: 22px;
+  }
+}

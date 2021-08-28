@@ -1,31 +1,14 @@
 import "./Main.css";
-import { animated, useSpring } from "react-spring";
+import Navbar from "./Navbar/Navbar";
+
 function Main(props) {
   let { mobileNav, setMobileNav } = props;
-  const animation = useSpring({ y: mobileNav ? 0 : -100 });
   return (
     <div className="main-container">
       {mobileNav ? (
-        <animated.nav
-          className="mobile-nav"
-          style={{
-            transform: animation.y.to((y) => `translate(0%, ${y}%)`),
-          }}
-        >
-          <ul className="mobile-nav-links">
-            <li onClick={() => setMobileNav(!mobileNav)}>PROJECTS</li>
-            <li onClick={() => setMobileNav(!mobileNav)}>ABOUT</li>
-            <li onClick={() => setMobileNav(!mobileNav)}>CONTACT</li>
-          </ul>
-        </animated.nav>
+        <div></div>
       ) : (
-        <nav className="nav-container">
-          <ul>
-            <li>PROJECTS</li>
-            <li>ABOUT</li>
-            <li>CONTACT</li>
-          </ul>
-        </nav>
+        <Navbar mobileNav={mobileNav} setMobileNav={setMobileNav} />
       )}
 
       <div className="text-container">
