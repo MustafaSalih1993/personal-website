@@ -4,27 +4,40 @@ import {
   AiOutlineInstagram,
   AiOutlineGithub,
 } from "react-icons/ai";
+
+import { animated, useTrail, config, useSpring } from "react-spring";
+const myLinks = [
+  { link: "mailto:mustafasalih1991@gmail.com", icon: <AiOutlineMail /> },
+  { link: "https://github.com/mustafasalih1993", icon: <AiOutlineGithub /> },
+  { link: "https://www.instagram.com/iq.code/", icon: <AiOutlineInstagram /> },
+];
+// const links = myLinks.map((link) => {
+//   return <a href={link.link}>{link.icon}</a>;
+// });
+
 function Contact() {
+  const trails = useTrail(3, {
+    config: config.gentle,
+    from: { color: "#ffffff", transform: "translate3d(0,-50%,0)" },
+    to: { color: "#512b58", transform: "translate3d(0,0,0)" },
+  });
+  const opacity = useSpring({ from: { opacity: 0 }, to: { opacity: 1 } });
   return (
     <div className="contact-container">
-      <div className="contact-title">You Can Find Me On:</div>
-      <div className="contact-box">
-        <div className="contact-item">
-          <a href="mailto:mustafasalih1991@gmail.com">
-            <AiOutlineMail></AiOutlineMail>
-          </a>
-        </div>
-        <div className="contact-item">
-          <a href="https://github.com/mustafasalih1993">
-            <AiOutlineGithub></AiOutlineGithub>
-          </a>
-        </div>
-        <div className="contact-item">
-          <a href="https://www.instagram.com/code.mu/">
-            <AiOutlineInstagram></AiOutlineInstagram>
-          </a>
-        </div>
-      </div>
+      <animated.div className="contact-title" style={opacity}>
+        You Can Find Me On:
+      </animated.div>
+      <civ className="contact-box">
+        {trails.map((animation, i) => {
+          return (
+            <animated.div className="contact-item" key={i} style={animation}>
+              <animated.a style={animation} href={myLinks[i].link}>
+                {myLinks[i].icon}
+              </animated.a>
+            </animated.div>
+          );
+        })}{" "}
+      </civ>
     </div>
   );
 }
