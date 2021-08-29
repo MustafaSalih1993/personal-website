@@ -1,10 +1,23 @@
 import "./About.css";
 import image from "./mustafa.jpg";
+import { useSpring, animated, config } from "react-spring";
+
 function About() {
+  const fromLeft = useSpring({
+    config: config.gentle,
+    from: { transform: "translate3d(-100%,0,0)", opacity: 0 },
+    to: { transform: "translate3d(0,0,0)", opacity: 1 },
+  });
+  const fromRight = useSpring({
+    config: config.gentle,
+    from: { transform: "translate3d(100%,0,0)", opacity: 0 },
+    to: { transform: "translate3d(0,0,0)", opacity: 1 },
+  });
+
   return (
     <div className="about-container">
       <div className="about-hero-container">
-        <div className="about-hero-text">
+        <animated.div style={fromLeft} className="about-hero-text">
           <div className="about-hero-title">MUSTAFA SALIH</div>
           <p>
             im from Iraq currently living in Turkey, i do some programming in a
@@ -12,11 +25,12 @@ function About() {
             programming a couple years ago, i have the ability to teach myself
             everything
           </p>
-        </div>
-        <div className="about-image-container">
+        </animated.div>
+
+        <animated.div style={fromRight} className="about-image-container">
           <div className="image-overlay"></div>
           <img className="img" src={image} alt="" />
-        </div>
+        </animated.div>
       </div>
 
       <div className="skills-card-container">

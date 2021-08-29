@@ -1,6 +1,8 @@
 import "./Projects.css";
 import Card from "./Card";
 import { SiRust, SiJavascript } from "react-icons/si";
+import { animated, config, useTrail } from "react-spring";
+
 function Projects() {
   const myProjects = [
     {
@@ -25,20 +27,34 @@ function Projects() {
       logo: <SiRust />,
     },
   ];
+  const cards = myProjects.map((project) => {
+    return (
+      <Card
+        title={project.title}
+        to={project.link}
+        logo={project.logo}
+        description={project.description}
+        linkTitle="View Source Code"
+      />
+    );
+  });
+  const trails = useTrail(myProjects.length, {
+    config: config.gentle,
+    from: { opacity: 0, transform: "translate3d(100%,0,0)" },
+    to: { opacity: 1, transform: "translate3d(0,0,0)" },
+  });
 
   return (
     <div className="projects-container">
-      <div className="projects-title">Things i made !</div>
+      <animated.div style={trails[0]} className="projects-title">
+        Things i made !
+      </animated.div>
       <div className="cards-container">
-        {myProjects.map((project) => {
+        {trails.map((animation, i) => {
           return (
-            <Card
-              title={project.title}
-              to={project.link}
-              logo={project.logo}
-              description={project.description}
-              linkTitle="View Source Code"
-            />
+            <animated.div key={i} style={animation}>
+              {cards[i]}
+            </animated.div>
           );
         })}
       </div>

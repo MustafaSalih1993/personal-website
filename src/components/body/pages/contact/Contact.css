@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
 }
 
 .contact-title {
@@ -28,7 +28,6 @@
 
 .contact-item a {
   color: #512b58;
-  transition: all 0.1s ease-in-out;
 }
 .contact-item a:hover {
   color: #ffffff;
