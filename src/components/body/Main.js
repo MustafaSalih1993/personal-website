@@ -8,13 +8,20 @@ function Main(props) {
     config: config.gentle,
     from: {
       opacity: 0,
-      transform: "perspective(600px) translate3d(100%,0,0) ",
+      transform: "translate3d(0,100%,0) ",
+      color: "#2c003e",
+      strokeDasharray: 100,
+      strokeDashoffset: 100,
     },
     to: {
       opacity: 1,
-      transform: "perspective(600px) translate3d(0,0,0)",
+      transform: "translate3d(0,0,0)",
+      color: "#ffa372",
+      strokeDasharray: 0,
+      strokeDashoffset: 0,
     },
   });
+
   return (
     <div className="main-container">
       {mobileNav ? (

@@ -11,10 +11,6 @@ const myLinks = [
   { link: "https://github.com/mustafasalih1993", icon: <AiOutlineGithub /> },
   { link: "https://www.instagram.com/iq.code/", icon: <AiOutlineInstagram /> },
 ];
-// const links = myLinks.map((link) => {
-//   return <a href={link.link}>{link.icon}</a>;
-// });
-
 function Contact() {
   const trails = useTrail(3, {
     config: config.gentle,
@@ -27,7 +23,7 @@ function Contact() {
       <animated.div className="contact-title" style={opacity}>
         You Can Find Me On:
       </animated.div>
-      <civ className="contact-box">
+      <div className="contact-box">
         {trails.map((animation, i) => {
           return (
             <animated.div className="contact-item" key={i} style={animation}>
@@ -36,8 +32,8 @@ function Contact() {
               </animated.a>
             </animated.div>
           );
-        })}{" "}
-      </civ>
+        })}
+      </div>
     </div>
   );
 }
