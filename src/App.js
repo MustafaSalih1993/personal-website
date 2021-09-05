@@ -11,6 +11,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import MobileNavbar from "./components/body/MobileNavbar/MobileNavbar";
+import NotFound from "./components/body/pages/404/404";
 
 function App() {
   let [mobileNav, setMobileNav] = useState(false);
@@ -22,11 +23,11 @@ function App() {
         <Route path="/" exact component={Main}>
           <Redirect to="/personal-website" />
         </Route>
-        <Route path="/personal-website" exact component={Main}></Route>
+        <Route path="/personal-website" component={Main}></Route>
         <Route path="/projects" component={Projects}></Route>
         <Route path="/about" component={About}></Route>
         <Route path="/contact" component={Contact}></Route>
-        <Route path="*" component={Main}></Route>
+        <Route path="*" component={NotFound}></Route>
       </Switch>
     </Router>
   );

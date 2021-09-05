@@ -1,0 +1,11 @@
+.notfound-container {
+  text-align: center;
+  color: #ea9085;
+}
+.notfound-title {
+  font-size: 60px;
+}
+.notfound-desc {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
