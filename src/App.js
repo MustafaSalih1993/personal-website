@@ -22,9 +22,9 @@ function App() {
       <Header mobileNav={mobileNav} setMobileNav={setMobileNav} />
       <Switch>
         <Route path="/" exact component={Main}>
-          <Redirect to="/personal-website" />
+          <Redirect to="/home" />
         </Route>
-        <Route path="/personal-website" component={Main}></Route>
+        <Route path="/home" component={Main}></Route>
         <Route path="/projects" component={Projects}></Route>
         <Route path="/about" component={About}></Route>
         <Route path="/contact" component={Contact}></Route>
