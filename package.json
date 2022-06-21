@@ -1,5 +1,5 @@
 {
-  "name": "personal-website",
+  "name": "mustafa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +15,7 @@
     "react-spring": "^9.2.4",
     "web-vitals": "^1.1.2"
   },
-  "homepage": "https://mustafasalih1993.github.io/personal-website",
+  "homepage": "https://www.mustafasalih.net",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
