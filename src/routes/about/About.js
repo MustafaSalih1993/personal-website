@@ -18,18 +18,17 @@ function About() {
     <div className="about-container">
       <div className="about-hero-container">
         <animated.div style={fromLeft} className="about-hero-text">
-          <div className="about-hero-title">MUSTAFA SALIH</div>
+          <div className="about-hero-title">MUSTAFA</div>
           <p>
-            im from Iraq currently living in Turkey, i do some programming in a
-            couple of programming languages, i’ve found the passion for
-            programming a couple years ago, i have the ability to teach myself
-            everything
+            An Iraqi dev based in Helsinki, Hard working problem solver, found
+            the passion for programming a couple years ago and currently trying
+            to make this hobby into a productive career.
           </p>
         </animated.div>
 
         <animated.div style={fromRight} className="about-image-container">
           <div className="image-overlay"></div>
-          <img className="img" src={image} alt="" />
+          <img className="img" src={image} alt="The Man" />
         </animated.div>
       </div>
 
@@ -48,13 +47,14 @@ function About() {
             <div>Node.js</div>
           </div>
           <div className="skills">
-            <div>Html</div>
-            <div>Css</div>
-          </div>
-          <div className="skills">
             <div>SQL</div>
             <div>Postgresql</div>
             <div>MongoDB</div>
+          </div>
+          <div className="skills">
+            <div>Linux</div>
+            <div>Html</div>
+            <div>Css</div>
           </div>
         </div>
       </div>
