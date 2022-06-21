@@ -22,6 +22,9 @@ function MobileNavbar(props) {
         <Link to="/contact">
           <li onClick={() => setMobileNav(!mobileNav)}>CONTACT</li>
         </Link>
+        <Link to="/resume">
+          <li onClick={() => setMobileNav(!mobileNav)}>Resume/CV</li>
+        </Link>
       </ul>
     </animated.nav>
   );

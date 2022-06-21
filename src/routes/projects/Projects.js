@@ -12,19 +12,20 @@ function Projects() {
       link: "https://github.com/MustafaSalih1993/tai",
       logo: <SiRust />,
     },
-    {
-      title: "SORTING VISUALIZER",
-      description:
-        "Sorting visualizer is a web application written in javascript it shows how sorting algorithms work! i learned alot about sorting with this project",
-      link: "https://github.com/MustafaSalih1993/sorting-visualizer",
-      logo: <SiJavascript />,
-    },
+
     {
       title: "RSBLOCKS",
       description:
         "rsblocks is a usable status bar on linux showing system information and fetches weather, bitcoin prices and many more, it's configurable with a YAML configuration file, it's written in Rust programming language",
       link: "https://github.com/MustafaSalih1993/rsblocks",
       logo: <SiRust />,
+    },
+    {
+      title: "SORTING VISUALIZER",
+      description:
+        "Sorting visualizer is a web application written in javascript it shows how sorting algorithms work! i learned alot about sorting with this project",
+      link: "https://github.com/MustafaSalih1993/sorting-visualizer",
+      logo: <SiJavascript />,
     },
   ];
   const cards = myProjects.map((project) => {

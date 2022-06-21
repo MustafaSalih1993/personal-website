@@ -1,0 +1,11 @@
+.resume-container {
+  text-align: center;
+  color: #ea9085;
+}
+.resume-title {
+  font-size: 40px;
+}
+.resume-desc {
+  font-size: 30px;
+  margin-bottom: 40px;
+}

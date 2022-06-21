@@ -1,5 +1,5 @@
 import "./Main.css";
-import Navbar from "./Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import { useSpring, animated, config } from "react-spring";
 
 function Main(props) {

@@ -6,6 +6,7 @@ const navLinks = [
   { name: "PROJECTS", to: "/projects" },
   { name: "ABOUT", to: "/about" },
   { name: "CONTACT", to: "/contact" },
+  { name: "Resume/CV", to: "/resume" },
 ];
 
 function Navbar() {

@@ -1,8 +1,8 @@
 import Header from "./components/Header/Header";
-import Main from "./components/body/Main";
-import Projects from "./components/body/pages/projects/Projects";
-import About from "./components/body/pages/about/About";
-import Contact from "./components/body/pages/contact/Contact";
+import Main from "./Main";
+import Projects from "./routes/projects/Projects";
+import About from "./routes/about/About";
+import Contact from "./routes/contact/Contact";
 import { useState } from "react";
 import {
   Switch,
@@ -10,8 +10,9 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import MobileNavbar from "./components/body/MobileNavbar/MobileNavbar";
-import NotFound from "./components/body/pages/404/404";
+import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
+import NotFound from "./routes/404/404";
+import Resume from "./routes/resume/resume";
 
 function App() {
   let [mobileNav, setMobileNav] = useState(false);
@@ -27,6 +28,7 @@ function App() {
         <Route path="/projects" component={Projects}></Route>
         <Route path="/about" component={About}></Route>
         <Route path="/contact" component={Contact}></Route>
+        <Route path="/resume" component={Resume}></Route>
         <Route path="*" component={NotFound}></Route>
       </Switch>
     </Router>

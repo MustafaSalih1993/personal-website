@@ -7,7 +7,7 @@ import {
 
 import { animated, useTrail, config, useSpring } from "react-spring";
 const myLinks = [
-  { link: "mailto:mustafasalih1991@gmail.com", icon: <AiOutlineMail /> },
+  { link: "mailto:contact@mustafasalih.net", icon: <AiOutlineMail /> },
   { link: "https://github.com/mustafasalih1993", icon: <AiOutlineGithub /> },
   { link: "https://www.instagram.com/iq.code/", icon: <AiOutlineInstagram /> },
 ];
