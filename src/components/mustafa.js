@@ -82,8 +82,8 @@ function Mustafa(props) {
   return (
     <animated.svg
       className="mustafa"
-      width={mobile ? "299" : "752"}
-      height={mobile ? "43" : "113"}
+      width={mobile ? "30" : "100"}
+      height={mobile ? "30" : "100"}
       viewBox={mobile ? "0 0 299 43" : "0 0 752 113"}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

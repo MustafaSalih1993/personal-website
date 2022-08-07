@@ -21,10 +21,31 @@ function Projects() {
       logo: <SiRust />,
     },
     {
+      title: "SNOTIFY",
+      description:
+        "a very simple tool that pushs song notifications from spotify client to desktop",
+      link: "https://github.com/MustafaSalih1993/snotify",
+      logo: <SiRust />,
+    },
+    {
+      title: "FSI",
+      description:
+        "FSI (Fetch System Information) a cli tool to print useful informations about your system",
+      link: "https://github.com/MustafaSalih1993/fsi",
+      logo: <SiRust />,
+    },
+    {
       title: "SORTING VISUALIZER",
       description:
         "Sorting visualizer is a web application written in javascript it shows how sorting algorithms work! i learned alot about sorting with this project",
       link: "https://github.com/MustafaSalih1993/sorting-visualizer",
+      logo: <SiJavascript />,
+    },
+    {
+      title: "MAZE-GENERATION",
+      description:
+        "A fun maze generator web application using backtracking, stacks with a solve button",
+      link: "https://github.com/MustafaSalih1993/maze-generation",
       logo: <SiJavascript />,
     },
   ];

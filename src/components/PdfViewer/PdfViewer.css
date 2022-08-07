@@ -1,0 +1,11 @@
+.pdf-wrapper {
+  max-height: 100vh;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.react-pdf__Page__canvas {
+  margin: 20 auto;
+  width: 80% !important;
+  height: 100% !important;
+}

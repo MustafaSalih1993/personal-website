@@ -29,6 +29,7 @@ function App() {
         <Route path="/about" component={About}></Route>
         <Route path="/contact" component={Contact}></Route>
         <Route path="/resume" component={Resume}></Route>
+        <Route path="/*" component={NotFound}></Route>
         <Route path="*" component={NotFound}></Route>
       </Switch>
     </Router>

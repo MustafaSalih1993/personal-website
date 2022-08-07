@@ -39,7 +39,6 @@ function About() {
             <div>Rust</div>
             <div>Javascript</div>
             <div>C</div>
-            <div>Python</div>
           </div>
           <div className="skills">
             <div>React.js</div>
