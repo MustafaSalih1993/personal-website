@@ -6,7 +6,6 @@
   .mobile-nav {
     position: absolute;
     display: flex;
-    background-color: #ea9085;
     width: 100%;
     height: 60vh;
     top: 0;
@@ -17,7 +16,6 @@
   .mobile-nav-links {
     display: flex;
     flex-direction: column;
-    color: #512b58;
     font-size: 18px;
   }
 }

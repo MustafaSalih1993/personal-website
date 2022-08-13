@@ -2,6 +2,7 @@ import "./Projects.css";
 import Card from "./Card";
 import { SiRust, SiJavascript } from "react-icons/si";
 import { animated, config, useTrail } from "react-spring";
+import { blueColor } from "../../styles";
 
 function Projects() {
   const myProjects = [
@@ -85,7 +86,7 @@ function Projects() {
         <div className="cards-end-text">
           Check my Github account{" "}
           <a
-            className="cards-end-link"
+            style={{ color: blueColor }}
             href="https://github.com/MustafaSalih1993"
           >
             HERE

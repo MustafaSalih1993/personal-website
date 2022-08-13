@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useTrail, animated, config } from "react-spring";
+import { blackColor } from "../../styles";
 
 const navLinks = [
   { name: "PROJECTS", to: "/projects" },
@@ -20,7 +21,9 @@ function Navbar() {
       <ul>
         {trails.map((styles, i) => (
           <animated.li style={styles} key={i}>
-            <Link to={navLinks[i].to}>{navLinks[i].name}</Link>
+            <Link style={{ color: blackColor }} to={navLinks[i].to}>
+              {navLinks[i].name}
+            </Link>
           </animated.li>
         ))}
       </ul>

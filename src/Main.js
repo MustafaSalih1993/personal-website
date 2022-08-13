@@ -1,6 +1,7 @@
 import "./Main.css";
 import Navbar from "./components/Navbar/Navbar";
 import { useSpring, animated, config } from "react-spring";
+import { fontColor } from "./styles";
 
 function Main(props) {
   let { mobileNav, setMobileNav } = props;
@@ -9,14 +10,14 @@ function Main(props) {
     from: {
       opacity: 0,
       transform: "translate3d(0,100%,0) ",
-      color: "#2c003e",
+      color: fontColor,
       strokeDasharray: 100,
       strokeDashoffset: 100,
     },
     to: {
       opacity: 1,
       transform: "translate3d(0,0,0)",
-      color: "#ffa372",
+      color: fontColor,
       strokeDasharray: 0,
       strokeDashoffset: 0,
     },

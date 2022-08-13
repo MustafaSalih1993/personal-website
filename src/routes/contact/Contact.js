@@ -6,18 +6,21 @@ import {
 } from "react-icons/ai";
 
 import { animated, useTrail, config, useSpring } from "react-spring";
+import { fontColor, pageBackgroundColor } from "../../styles";
 const myLinks = [
   { link: "mailto:contact@mustafasalih.net", icon: <AiOutlineMail /> },
   { link: "https://github.com/mustafasalih1993", icon: <AiOutlineGithub /> },
   { link: "https://www.instagram.com/iq.code/", icon: <AiOutlineInstagram /> },
 ];
+
 function Contact() {
   const trails = useTrail(3, {
     config: config.gentle,
-    from: { color: "#ffffff", transform: "translate3d(0,-50%,0)" },
-    to: { color: "#512b58", transform: "translate3d(0,0,0)" },
+    from: { color: pageBackgroundColor, transform: "translate3d(0,-50%,0)" },
+    to: { color: fontColor, transform: "translate3d(0,0,0)" },
   });
   const opacity = useSpring({ from: { opacity: 0 }, to: { opacity: 1 } });
+
   return (
     <div className="contact-container">
       <animated.div className="contact-title" style={opacity}>

@@ -67,13 +67,13 @@ function Mustafa(props) {
   const spring = useTrail(paths.length, {
     config: config.default,
     from: {
-      fill: "#2c003e",
+      // fill: "#2c003e",
       transform: "translate3d(0,100px,0)",
       //   strokeDasharray: 0,
       //   strokeDashoffset: 0,
     },
     to: {
-      fill: "#FFA372",
+      // fill: "#FFA372",
       transform: "translate3d(0,0,0)",
       //   strokeDasharray: 100,
       //   strokeDashoffset: 100,
