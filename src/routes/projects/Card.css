@@ -1,6 +1,5 @@
 .card-container {
   display: flex;
-  background: #ea9085;
   align-items: center;
   justify-content: space-between;
   margin: 50px 15%;
@@ -23,20 +22,17 @@
   width: 30%;
 }
 .card-title {
-  color: #343336;
   font-size: 40px;
   margin-bottom: 20px;
 }
 .card-desc {
   font-size: 22px;
-  color: #343336;
 }
 .language-container {
   margin-bottom: 20px;
 }
 
 .languages {
-  color: #512b58;
   font-size: 22px;
 }
 .language-logo-container {
@@ -69,7 +65,6 @@
   }
 
   .languages {
-    color: #512b58;
     font-size: 18px;
   }
   .language-logo-container {

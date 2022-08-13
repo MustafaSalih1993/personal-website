@@ -1,5 +1,4 @@
 .nav-container {
-  color: #512b58;
   font-size: 30px;
 }
 
@@ -15,11 +14,6 @@ li:hover {
 
 a {
   text-decoration: none;
-  color: #512b58;
-}
-
-a:hover {
-  color: #ea9085;
 }
 
 @media screen and (max-width: 600px) {

@@ -8,11 +8,9 @@
 
 .contact-title {
   font-size: 40px;
-  color: #ea9085;
   margin-bottom: 50px;
 }
 .contact-box {
-  background-color: #ea9085;
   border-radius: 20px;
   padding: 5px;
   display: flex;
@@ -21,7 +19,6 @@
 }
 
 .contact-item {
-  color: #ffffff;
   font-size: 40px;
   margin: auto 10px;
 }

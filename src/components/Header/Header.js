@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo-svg.svg";
 import "./Header.css";
 import { FaBars } from "react-icons/fa";
 import { GrClose } from "react-icons/gr";

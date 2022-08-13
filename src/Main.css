@@ -14,13 +14,11 @@
 .main-text {
   font-size: 160px;
   font-weight: bold;
-  color: #ffa372;
   letter-spacing: 14px;
 }
 
 .sub-text {
   font-size: 48px;
-  color: #ea9085;
 }
 
 @media screen and (max-width: 600px) {
