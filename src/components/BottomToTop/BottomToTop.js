@@ -1,9 +1,9 @@
-import React, { useEffect , useState} from 'react';
+import React, { useEffect, useState } from "react";
 import "./BottomToTop.css";
-import {FaArrowCircleUp} from "react-icons/fa"
+import { FaArrowCircleUp } from "react-icons/fa";
+import { scrollToTopBackground, scrollToTopColor } from "../../styles";
 
 const BottomToTop = () => {
-
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
@@ -19,17 +19,21 @@ const BottomToTop = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
-  
+
   return (
     <>
-       {showButton && (
-        <FaArrowCircleUp onClick={scrollToTop} className="back-to-top"/>
+      {showButton && (
+        <FaArrowCircleUp
+          onClick={scrollToTop}
+          style={{ color: scrollToTopColor, background: scrollToTopBackground }}
+          className="back-to-top"
+        />
       )}
     </>
-  )
-}
+  );
+};
 
-export default BottomToTop
+export default BottomToTop;

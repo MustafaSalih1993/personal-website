@@ -1,16 +1,14 @@
 .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 70px;
-    background: rgb(142, 108, 236);
-    color: white;
-    cursor: pointer;
-    border-radius: 100px;
-    border: none;
-    box-shadow: 0 5px 10px #ccc;
-  }
-  
-  .back-to-top:hover {
-    background: red;
-  }
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 50px;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 5px 10px #3d3c42;
+}
+
+.back-to-top:hover {
+  background: #a6d1e6;
+}

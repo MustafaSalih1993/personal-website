@@ -11,8 +11,12 @@ const cardFont = fontColor;
 const mobileNavBackground = fontColor;
 const mobileNavColor = pageBackgroundColor;
 const navLinksColor = purpleColor;
+const scrollToTopBackground = purpleColor;
+const scrollToTopColor = whiteColor;
 
 export {
+  scrollToTopBackground,
+  scrollToTopColor,
   whiteColor,
   blackColor,
   navLinksColor,
