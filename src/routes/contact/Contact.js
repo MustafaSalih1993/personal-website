@@ -1,4 +1,5 @@
 import "./Contact.css";
+import BottomToTop from "../../components/BottomToTop/BottomToTop";
 import {
   AiOutlineMail,
   AiOutlineInstagram,
@@ -37,6 +38,7 @@ function Contact() {
           );
         })}
       </div>
+      <BottomToTop/>
     </div>
   );
 }

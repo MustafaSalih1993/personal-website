@@ -1,6 +1,7 @@
 import "./About.css";
 import image from "./mustafa.jpg";
 import { useSpring, animated, config } from "react-spring";
+import BottomToTop from "../../components/BottomToTop/BottomToTop";
 
 function About() {
   const fromLeft = useSpring({
@@ -57,6 +58,7 @@ function About() {
           </div>
         </div>
       </div>
+      <BottomToTop/>
     </div>
   );
 }

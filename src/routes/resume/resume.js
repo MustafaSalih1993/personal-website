@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import PdfViewer from "../../components/PdfViewer/PdfViewer";
 import pdffile from "../../assets/Al-chalabi_Mustafa.pdf";
 import { blueColor } from "../../styles";
+import BottomToTop from "../../components/BottomToTop/BottomToTop";
+
 function Resume() {
   return (
     <div className="resume-container">
@@ -21,6 +23,7 @@ function Resume() {
           GO HOME
         </Link>
       </div>
+      <BottomToTop/>
     </div>
   );
 }

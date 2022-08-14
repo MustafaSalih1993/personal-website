@@ -3,6 +3,7 @@ import Card from "./Card";
 import { SiRust, SiJavascript } from "react-icons/si";
 import { animated, config, useTrail } from "react-spring";
 import { blueColor } from "../../styles";
+import BottomToTop from "../../components/BottomToTop/BottomToTop";
 
 function Projects() {
   const myProjects = [
@@ -93,6 +94,7 @@ function Projects() {
           </a>
         </div>
       </div>
+      <BottomToTop/>
     </div>
   );
 }
